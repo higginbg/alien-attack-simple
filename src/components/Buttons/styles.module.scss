@@ -1,0 +1,33 @@
+@import '../../App.scss';
+
+.Buttons {
+  margin: 0 auto;
+  margin-top: 20px;
+  justify-content: center;
+  width: 80%;
+  
+  div {
+    width: 100%;
+    display: flex;
+  }
+
+  button {
+    &.Recharge {
+      background-color: $gold;
+    }
+    
+    &.Attack {
+      background-color: green;
+    }
+    
+    &.Restart {
+      margin: 10px auto 0 auto;
+      background-color: red;
+      width: 300px;
+      
+      &.game-over {
+        background-color: $blue;
+      }
+    }
+  }
+}
